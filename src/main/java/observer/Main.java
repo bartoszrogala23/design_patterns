@@ -15,9 +15,15 @@ public class Main {
         Email email = new Email();
         MobileApp mobileApp = new MobileApp();
 
-        textMessage.updateOrderStatus(order);
-        email.updateOrderStatus(order);
-        mobileApp.updateOrderStatus(order);
+        order.registerObserver(textMessage);
+        order.registerObserver(email);
+        order.registerObserver(mobileApp);
+
+        order.notifyObservers();
+
+        order.changeOrderStatus(OrderStatus.SENT);
+        order.unregisterObserver(email);
+        order.changeOrderStatus(OrderStatus.DELIVERED);
 
         /*
           Two issues: redundand updateOrderStatus, too much actions needed if new orderStatus is changed (same if
