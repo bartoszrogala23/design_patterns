@@ -11,6 +11,6 @@ public class InternetNews implements Observer {
 
     @Override
     public void updateForecast(WeatherForecast weatherForecast) {
-        System.out.println();
+        System.out.println("Internet News: temperature: " + weatherForecast);
     }
 }
