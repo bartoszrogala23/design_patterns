@@ -1,6 +1,6 @@
-package forecast;
+package observer.forecast;
 
-import notification.Observer;
+import observer.notification.Observer;
 
 public interface Observable {
     void registerObserver(Observer observer);

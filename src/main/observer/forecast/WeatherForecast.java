@@ -1,4 +1,4 @@
-package forecast;
+package observer.forecast;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

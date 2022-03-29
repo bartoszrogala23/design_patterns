@@ -1,5 +1,5 @@
-import forecast.WeatherForecast;
-import notification.RadioNews;
+import observer.forecast.WeatherForecast;
+import observer.notification.RadioNews;
 
 public class Main {
     public static void main(String[] args) {
