@@ -1,3 +1,5 @@
+package forecast;
+
 import notification.Observer;
 
 public interface Observable {

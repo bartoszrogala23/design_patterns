@@ -1,3 +1,4 @@
+import forecast.WeatherForecast;
 import notification.RadioNews;
 
 public class Main {
