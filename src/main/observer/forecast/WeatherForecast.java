@@ -23,12 +23,12 @@ public class WeatherForecast implements Observable {
 
     @Override
     public void registerObserver(Observer observer) {
-registeredObservers.add(observer);
+        registeredObservers.add(observer);
     }
 
     @Override
     public void unregisterObserver(Observer observer) {
-registeredObservers.remove(observer);
+        registeredObservers.remove(observer);
     }
 
     @Override

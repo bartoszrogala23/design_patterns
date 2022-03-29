@@ -9,9 +9,8 @@ import observer.forecast.WeatherForecast;
 @Setter
 @Getter
 public class InternetNews implements Observer {
-
     @Override
-    public static void updateForecast(WeatherForecast weatherForecast) {
+    public void updateForecast(WeatherForecast weatherForecast) {
         System.out.println("Internet News: temperature: " + weatherForecast.getTemperature() + ", pressure: " + weatherForecast.getPressure());
     }
 }
