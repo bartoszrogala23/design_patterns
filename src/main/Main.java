@@ -11,5 +11,6 @@ public class Main {
         TvNews tvNews = new TvNews();
 
         weatherForecast.notifyObservers();
+
     }
 }

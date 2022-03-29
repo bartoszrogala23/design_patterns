@@ -14,7 +14,7 @@ import java.util.Set;
 public class WeatherForecast implements Observable {
     int temperature;
     int pressure;
-    Set<Observable> registeredObservers = new HashSet<>();
+    Set<Observer> registeredObservers = new HashSet<>();
 
     public WeatherForecast(int temperature, int pressure) {
         this.temperature = temperature;
