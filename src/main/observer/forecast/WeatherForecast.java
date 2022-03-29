@@ -36,5 +36,6 @@ public class WeatherForecast implements Observable {
         for (Observer observer : registeredObservers) {
             observer.updateForecast(this);
         }
+        System.out.println("************************************************");
     }
 }

@@ -10,6 +10,12 @@ public class Main {
         InternetNews internetNews = new InternetNews();
         TvNews tvNews = new TvNews();
 
+        weatherForecast.registerObserver(radioNews);
+        weatherForecast.registerObserver(internetNews);
+        weatherForecast.registerObserver(tvNews);
+        weatherForecast.notifyObservers();
+
+        weatherForecast.unregisterObserver(tvNews);
         weatherForecast.notifyObservers();
 
     }
