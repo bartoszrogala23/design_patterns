@@ -1,9 +1,11 @@
-package factory;
+package factory.units;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
-@AllArgsConstructor
+import static lombok.AccessLevel.PROTECTED;
+
+@AllArgsConstructor(access = PROTECTED)
 @Getter
 public abstract class Unit {
 
